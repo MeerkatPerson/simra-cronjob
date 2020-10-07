@@ -8,9 +8,6 @@ regLen=${#regions[@]}
 # Loop through the array
 for k in "${!regions[@]}"; do 
 
-  # **********************************************************
-  # (1) Aggregate ride data for region 
-
   cd /home/meerkat/SimRa/SimRa/${regions[$k]}/Rides
 
   firstFileRides=`ls VM* -r --sort=time | head -n 1`
@@ -24,7 +21,7 @@ for k in "${!regions[@]}"; do
     nRides=$(date -I -d "$currDateRides + 1 day")
     countRides=$(find . -type f -newermt $currDateRides ! -newermt $nRides | wc -l)
     rideArr=("${rideArr[@]}" $currDateRides $countRides)
-    currDate=$nRides
+    currDateRides=$nRides
     # echo $currDate
   done
     varsRides=(${rideArr[@]})

@@ -1,12 +1,16 @@
 #!/bin/sh
 
-cd /home/meerkat/SimRa/SimRa/Berlin/Rides
+cd /home/meerkat/SimRa
 
 git clone git@github.com:simra-project/simra-project.github.io.git
 
 cd simra-project.github.io
 
-mv ../data.json ./statsboard/data.json
+bash ../count-uploads.sh
+
+mv ../rideData.json ./statsboard/rideData.json
+
+mv ../profileData.json ./statsboard/profileData.json
 
 git add ./statsboard/data.json
 
