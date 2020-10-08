@@ -23,3 +23,5 @@ git push
 cd ..
 
 yes | rm -r simra-project.github.io
+
+ #¯\_(ツ)_/¯
