@@ -63,7 +63,7 @@ Open the CronTab with a text editor (Vim, of course 🤠):
 crontab -e
 ```
 
-Add the bottom of the file, add this (replacing YOUR-USERNAME with your username, of course):
+At the bottom of the file, add this (replacing YOUR-USERNAME with your username, of course):
 
 ```
 20 10 * * * bash /home/YOUR-USERNAME/SimRa/cronjob-client.sh  >> /home/YOUR-USERNAME/cronbuglog.txt 2>&1
