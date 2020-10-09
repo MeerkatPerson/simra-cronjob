@@ -3,7 +3,7 @@
 
 ### (1) Putting the files in place
 
-Firstly, place the two files into the directory structure as shown in the picture below in order for paths in scripts to be correct. That is, they are inside the first SimRa folder but OUTSIDE the second SimRa folder.
+Firstly, place the two files (`count-uploads.sh` and `cronjob-client.sh`) into the directory structure as shown in the picture below in order for paths in scripts to be correct. That is, they are inside the first SimRa folder but OUTSIDE the second SimRa folder.
 
 ![Directory structure](directory-struct.png)
 
