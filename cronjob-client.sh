@@ -12,7 +12,9 @@ mv ../rideData.json ./statsboard/rideData.json
 
 mv ../profileData.json ./statsboard/profileData.json
 
-git add ./statsboard/data.json
+git add ./statsboard/rideDdata.json
+
+git add ./statsboard/profileDdata.json
 
 CURRDATE=`date +"%d-%b-%Y"`
 
